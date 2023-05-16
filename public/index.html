@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>E-Commerce</title>
+<title>E-Commerce Production Render</title>
 <style media=screen>
  /*!* Bootstrap v3.3.7 (http://getbootstrap.com)
 * Copyright 2011-2016 Twitter, Inc.
@@ -8397,7 +8397,7 @@
 <div class=container-fluid>
  <div class=row>
   <div class="col-md-12 collection-intro">
-   <h3>E-Commerce</h3>
+   <h3>E-Commerce Production Render</h3>
    <p>
   </div>
   <div class=col-md-12>
@@ -8406,7 +8406,6 @@
      <li><strong><a href=#Auth>Auth</a></strong>
       <ul>
        <li><a class=endpoint_menu href=#jump-Auth-LogoutUser>Logout User</a>
-       <li><a class=endpoint_menu href=#jump-Auth-LogoutUserCopy>Logout User Copy</a>
        <li><a class=endpoint_menu href=#jump-Auth-RegisterUser>Register User</a>
        <li><a class=endpoint_menu href=#jump-Auth-LoginUser>Login User</a>
       </ul>
@@ -8450,7 +8449,7 @@
     <div class="panel panel-default">
      <div class=panel-heading>
       <h3 class=panel-title id=Auth>Auth
-       <span class=badge>4</span>
+       <span class=badge>3</span>
       </h3>
      </div>
      <div class=panel-body>
@@ -8471,20 +8470,6 @@
           <div class=panel-body></div>
          </div>
         </div>
-        <div class="panel panel-info" id=jump-Auth-LogoutUserCopy>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-info data-toggle=collapse
-           data-parent=#accordion-Auth href=#collapse-Auth-LogoutUserCopy>
-           <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Logout User Copy</strong>
-            &nbsp;|&nbsp;
-            <strong class="request-method border-info">GET</strong>
-            &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/auth/logout
-           </h4>
-          </a></div>
-         <div id=collapse-Auth-LogoutUserCopy class="panel-collapse collapse">
-          <div class=panel-body></div>
-         </div>
-        </div>
         <div class="panel panel-success" id=jump-Auth-RegisterUser>
          <div class=panel-heading><small class="pull-right text-muted">raw</small>
           <a class=text-success data-toggle=collapse data-parent=#accordion-Auth href=#collapse-Auth-RegisterUser>
@@ -8499,7 +8484,7 @@
          <div id=collapse-Auth-RegisterUser class="panel-collapse collapse">
           <div class=panel-body>
            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-            &#34;name&#34;:&#34;susan&#34;,&#34;email&#34;:&#34;susan@gmail.com&#34;,&#34;password&#34;:&#34;secret&#34;,&#34;role&#34;:&#34;admin&#34;
+            &#34;name&#34;:&#34;Bobo&#34;,&#34;email&#34;:&#34;bobo@gmail.com&#34;,&#34;password&#34;:&#34;secret&#34;,&#34;role&#34;:&#34;user&#34;
             }</span>
            <div class=clearfix></div>
           </div>
@@ -8518,7 +8503,7 @@
          <div id=collapse-Auth-LoginUser class="panel-collapse collapse">
           <div class=panel-body>
            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-            &#34;email&#34;:&#34;susan@gmail.com&#34;,&#34;password&#34;:&#34;secret&#34;
+            &#34;email&#34;:&#34;john1@gmail.com&#34;,&#34;password&#34;:&#34;secret&#34;
             }</span>
            <div class=clearfix></div>
           </div>
@@ -8559,7 +8544,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/users/6273f3304c16034320fbd0da
+            https://ilog-ecommerce-api.onrender.com/api/v1/users/6457d611ed37867ee230d67f
            </h4>
           </a></div>
          <div id=collapse-User-GetSingleUser class="panel-collapse collapse">
@@ -8594,7 +8579,7 @@
          <div id=collapse-User-UpdateUser class="panel-collapse collapse">
           <div class=panel-body>
            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-            &#34;name&#34;:&#34;john&#34;,&#34;email&#34;:&#34;john1@gmail.com&#34;
+            &#34;name&#34;:&#34;john1&#34;,&#34;email&#34;:&#34;john11@gmail.com&#34;
             }</span>
            <div class=clearfix></div>
           </div>
@@ -8650,17 +8635,34 @@
          </div>
         </div>
         <div class="panel panel-success" id=jump-Product-CreateProduct>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-success
-           data-toggle=collapse data-parent=#accordion-Product href=#collapse-Product-CreateProduct>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-success data-toggle=collapse data-parent=#accordion-Product
+           href=#collapse-Product-CreateProduct>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Create Product</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/products
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Product-CreateProduct class="panel-collapse collapse">
-          <div class=panel-body></div>
+          <div class=panel-body>
+           <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+            &#34;name&#34;: &#34;accent chair&#34;,
+            &#34;price&#34;: 2599,
+            &#34;image&#34;:
+            &#34;https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160&#34;,
+            &#34;colors&#34;: [&#34;#ff0000&#34;, &#34;#00ff00&#34;, &#34;#0000ff&#34;],
+            &#34;company&#34;: &#34;marcos&#34;,
+            &#34;description&#34;: &#34;Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy
+            8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral
+            typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork
+            chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge&#34;,
+            &#34;category&#34;: &#34;office&#34;
+            }</span>
+           <div class=clearfix></div>
+          </div>
          </div>
         </div>
         <div class="panel panel-info" id=jump-Product-GetSingleProduct>
@@ -8670,7 +8672,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/products/123
+            https://ilog-ecommerce-api.onrender.com/api/v1/products/645e38465b6f34ad4bd5620a
            </h4>
           </a></div>
          <div id=collapse-Product-GetSingleProduct class="panel-collapse collapse">
@@ -8678,45 +8680,63 @@
          </div>
         </div>
         <div class="panel panel-warning" id=jump-Product-UpdateProduct>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-warning
-           data-toggle=collapse data-parent=#accordion-Product href=#collapse-Product-UpdateProduct>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-warning data-toggle=collapse data-parent=#accordion-Product
+           href=#collapse-Product-UpdateProduct>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Update Product</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/products/123
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Product-UpdateProduct class="panel-collapse collapse">
           <div class=panel-body></div>
          </div>
         </div>
         <div class="panel panel-danger" id=jump-Product-DeleteProduct>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-danger data-toggle=collapse
-           data-parent=#accordion-Product href=#collapse-Product-DeleteProduct>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-danger data-toggle=collapse data-parent=#accordion-Product href=#collapse-Product-DeleteProduct>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Delete Product</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-danger">DELETE</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/products/123
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Product-DeleteProduct class="panel-collapse collapse">
           <div class=panel-body></div>
          </div>
         </div>
         <div class="panel panel-success" id=jump-Product-UploadImage>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-success
-           data-toggle=collapse data-parent=#accordion-Product href=#collapse-Product-UploadImage>
+         <div class=panel-heading><small class="pull-right text-muted">formdata</small>
+          <a class=text-success data-toggle=collapse data-parent=#accordion-Product href=#collapse-Product-UploadImage>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Upload Image</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/products/uploadImage
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Product-UploadImage class="panel-collapse collapse">
-          <div class=panel-body></div>
+          <div class=panel-body>
+           <h5 class="label label-primary">Body</h5>
+           <table class="table table-hover">
+            <thead>
+             <tr>
+              <th>Key
+              <th>Value
+              <th>Description
+            <tbody>
+             <tr>
+              <td>image
+              <td>
+              <td>
+           </table>
+          </div>
          </div>
         </div>
         <div class="panel panel-info" id=jump-Product-GetSingleProductReviews>
@@ -8726,7 +8746,7 @@
              Reviews</strong> &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/products/645a1ce521f38c00a974666f/reviews
+            https://ilog-ecommerce-api.onrender.com/api/v1/products/645e38465b6f34ad4bd5620a/reviews
            </h4>
           </a></div>
          <div id=collapse-Product-GetSingleProductReviews class="panel-collapse collapse">
@@ -8748,29 +8768,39 @@
       <div class=request-item>
        <div class=panel-group id=accordion-Review>
         <div class="panel panel-success" id=jump-Review-CreateReview>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-success
-           data-toggle=collapse data-parent=#accordion-Review href=#collapse-Review-CreateReview>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-success data-toggle=collapse data-parent=#accordion-Review href=#collapse-Review-CreateReview>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Create Review</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/reviews
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Review-CreateReview class="panel-collapse collapse">
-          <div class=panel-body></div>
+          <div class=panel-body>
+           <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+            &#34;rating&#34;:4,
+            &#34;title&#34;:&#34;good product&#34;,
+            &#34;comment&#34;:&#34;good usefull product...&#34;,
+            &#34;product&#34;:&#34;645e38465b6f34ad4bd5620a&#34;
+            }</span>
+           <div class=clearfix></div>
+          </div>
          </div>
         </div>
         <div class="panel panel-info" id=jump-Review-GetAllReviews>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-info data-toggle=collapse
-           data-parent=#accordion-Review href=#collapse-Review-GetAllReviews>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-info data-toggle=collapse data-parent=#accordion-Review href=#collapse-Review-GetAllReviews>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Get All Reviews</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/reviews
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Review-GetAllReviews class="panel-collapse collapse">
           <div class=panel-body></div>
          </div>
@@ -8782,7 +8812,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/reviews/123
+            https://ilog-ecommerce-api.onrender.com/api/v1/reviews/64633d0eaa2b3296dc4827c1
            </h4>
           </a></div>
          <div id=collapse-Review-GetSingleReview class="panel-collapse collapse">
@@ -8790,17 +8820,25 @@
          </div>
         </div>
         <div class="panel panel-warning" id=jump-Review-UpdateReview>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-warning
-           data-toggle=collapse data-parent=#accordion-Review href=#collapse-Review-UpdateReview>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-warning data-toggle=collapse data-parent=#accordion-Review href=#collapse-Review-UpdateReview>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Update Review</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/reviews/123
+            https://ilog-ecommerce-api.onrender.com/api/v1/reviews/64633d0eaa2b3296dc4827c1
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Review-UpdateReview class="panel-collapse collapse">
-          <div class=panel-body></div>
+          <div class=panel-body>
+           <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+            &#34;rating&#34;:5,
+            &#34;title&#34;:&#34;good product&#34;,
+            &#34;comment&#34;:&#34;good usefull product...&#34;
+            }</span>
+           <div class=clearfix></div>
+          </div>
          </div>
         </div>
         <div class="panel panel-danger" id=jump-Review-DeleteReview>
@@ -8832,17 +8870,34 @@
       <div class=request-item>
        <div class=panel-group id=accordion-Order>
         <div class="panel panel-success" id=jump-Order-CreateOrder>
-         <div class=panel-heading><small class="pull-right text-muted"></small><a class=text-success
-           data-toggle=collapse data-parent=#accordion-Order href=#collapse-Order-CreateOrder>
+         <div class=panel-heading><small class="pull-right text-muted">raw</small>
+          <a class=text-success data-toggle=collapse data-parent=#accordion-Order href=#collapse-Order-CreateOrder>
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Create Order</strong>
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
             https://ilog-ecommerce-api.onrender.com/api/v1/orders
            </h4>
-          </a></div>
+          </a>
+         </div>
          <div id=collapse-Order-CreateOrder class="panel-collapse collapse">
-          <div class=panel-body></div>
+          <div class=panel-body>
+           <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+            &#34;tax&#34;: 399,
+            &#34;shippingFee&#34;: 499,
+            &#34;items&#34;: [
+            {
+            &#34;name&#34;: &#34;accent chair&#34;,
+            &#34;price&#34;: 2599,
+            &#34;image&#34;:
+            &#34;https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160&#34;,
+            &#34;amount&#34;: 34,
+            &#34;product&#34;: &#34;645e38465b6f34ad4bd5620a&#34;
+            }
+            ]
+            }</span>
+           <div class=clearfix></div>
+          </div>
          </div>
         </div>
         <div class="panel panel-info" id=jump-Order-GetAllOrders>
@@ -8866,7 +8921,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/orders/123
+            https://ilog-ecommerce-api.onrender.com/api/v1/orders/64633ee9aa2b3296dc4827d3
            </h4>
           </a></div>
          <div id=collapse-Order-GetSingleOrder class="panel-collapse collapse">
@@ -8880,7 +8935,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://ilog-ecommerce-api.onrender.com/api/v1/orders/123
+            https://ilog-ecommerce-api.onrender.com/api/v1/orders/64633ee9aa2b3296dc4827d3
            </h4>
           </a></div>
          <div id=collapse-Order-Updateorder class="panel-collapse collapse">
@@ -8908,13 +8963,13 @@
    </div>
   </div>
  </div>
+ <script src="./browser-app.js"></script>
   <br><br>
-  <script src="./browser-app.js"></script>
  <footer class="navbar-default navbar-fixed-bottom">
   <div class=container-fluid>
    <div class="span12 text-center"><span data-toggle=tooltip
      title="If the application help you, please feel free to give a star to the project in github. Your star inspire me to work more on open-source projects like this!">Generated
-     at 2023-05-16 00:05:41 by <a href=https://github.com/thedevsaddam/docgen target=_blank
+     at 2023-05-16 11:43:20 by <a href=https://github.com/thedevsaddam/docgen target=_blank
       class=text-muted>docgen</a></span></div>
   </div>
  </footer>
